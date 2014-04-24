@@ -1,19 +1,18 @@
 //
-//  AYSecondViewController.m
+//  AYThirdViewController.m
 //  AYUltimateSegue
 //
-//  Created by Andrey Yastrebov on 23.04.14.
+//  Created by Andrey Yastrebov on 24.04.14.
 //  Copyright (c) 2014 AYastrebov. All rights reserved.
 //
 
-#import "AYSecondViewController.h"
-#import "AYSecondViewController+Storyboard.h"
+#import "AYThirdViewController.h"
 
-@interface AYSecondViewController ()
+@interface AYThirdViewController ()
 
 @end
 
-@implementation AYSecondViewController
+@implementation AYThirdViewController
 
 - (void)viewDidLoad
 {

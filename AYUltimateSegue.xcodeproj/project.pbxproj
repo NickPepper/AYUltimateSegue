@@ -23,6 +23,19 @@
 		BC72003019084DDF00B7D45C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC72000C19084DDF00B7D45C /* UIKit.framework */; };
 		BC72003819084DDF00B7D45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC72003619084DDF00B7D45C /* InfoPlist.strings */; };
 		BC72003A19084DDF00B7D45C /* AYUltimateSegueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC72003919084DDF00B7D45C /* AYUltimateSegueTests.m */; };
+		BC75F1C2190941A7009A9ED9 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75F1C1190941A7009A9ED9 /* UIViewController+Storyboard.m */; };
+		BC75F1C6190943FB009A9ED9 /* AYThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75F1C5190943FB009A9ED9 /* AYThirdViewController.m */; };
+		BC75F1CD19094553009A9ED9 /* AYFirstStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC75F1CC19094553009A9ED9 /* AYFirstStoryboard_iPhone.storyboard */; };
+		BC75F1CF1909456F009A9ED9 /* AYFirstStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC75F1CE1909456F009A9ED9 /* AYFirstStoryboard_iPad.storyboard */; };
+		BC75F1D2190945BE009A9ED9 /* AYFirstViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75F1D1190945BE009A9ED9 /* AYFirstViewController+Storyboard.m */; };
+		BC75F1D7190945F6009A9ED9 /* AYSecondViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75F1D6190945F6009A9ED9 /* AYSecondViewController+Storyboard.m */; };
+		BC75F1DC1909461C009A9ED9 /* AYThirdViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75F1DB1909461C009A9ED9 /* AYThirdViewController+Storyboard.m */; };
+		BC75F1DE19094642009A9ED9 /* AYSecondStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC75F1DD19094642009A9ED9 /* AYSecondStoryboard_iPhone.storyboard */; };
+		BC75F1E019094654009A9ED9 /* AYSecondStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC75F1DF19094654009A9ED9 /* AYSecondStoryboard_iPad.storyboard */; };
+		BC75F1E41909467A009A9ED9 /* AYThirdStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC75F1E31909467A009A9ED9 /* AYThirdStoryboard_iPhone.storyboard */; };
+		BC75F1E61909473B009A9ED9 /* AYThirdStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC75F1E51909473B009A9ED9 /* AYThirdStoryboard_iPad.storyboard */; };
+		BC75F1EA19094B9A009A9ED9 /* AYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75F1E919094B9A009A9ED9 /* AYTabBarViewController.m */; };
+		BC75F1EE19094BB6009A9ED9 /* AYTabBarViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75F1ED19094BB6009A9ED9 /* AYTabBarViewController+Storyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +71,26 @@
 		BC72003519084DDF00B7D45C /* AYUltimateSegueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AYUltimateSegueTests-Info.plist"; sourceTree = "<group>"; };
 		BC72003719084DDF00B7D45C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC72003919084DDF00B7D45C /* AYUltimateSegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYUltimateSegueTests.m; sourceTree = "<group>"; };
+		BC75F1C0190941A7009A9ED9 /* UIViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Storyboard.h"; sourceTree = "<group>"; };
+		BC75F1C1190941A7009A9ED9 /* UIViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Storyboard.m"; sourceTree = "<group>"; };
+		BC75F1C4190943FB009A9ED9 /* AYThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYThirdViewController.h; sourceTree = "<group>"; };
+		BC75F1C5190943FB009A9ED9 /* AYThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYThirdViewController.m; sourceTree = "<group>"; };
+		BC75F1CC19094553009A9ED9 /* AYFirstStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYFirstStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BC75F1CE1909456F009A9ED9 /* AYFirstStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYFirstStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		BC75F1D0190945BE009A9ED9 /* AYFirstViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AYFirstViewController+Storyboard.h"; sourceTree = "<group>"; };
+		BC75F1D1190945BE009A9ED9 /* AYFirstViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AYFirstViewController+Storyboard.m"; sourceTree = "<group>"; };
+		BC75F1D5190945F6009A9ED9 /* AYSecondViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AYSecondViewController+Storyboard.h"; sourceTree = "<group>"; };
+		BC75F1D6190945F6009A9ED9 /* AYSecondViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AYSecondViewController+Storyboard.m"; sourceTree = "<group>"; };
+		BC75F1DA1909461C009A9ED9 /* AYThirdViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AYThirdViewController+Storyboard.h"; sourceTree = "<group>"; };
+		BC75F1DB1909461C009A9ED9 /* AYThirdViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AYThirdViewController+Storyboard.m"; sourceTree = "<group>"; };
+		BC75F1DD19094642009A9ED9 /* AYSecondStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYSecondStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BC75F1DF19094654009A9ED9 /* AYSecondStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYSecondStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		BC75F1E31909467A009A9ED9 /* AYThirdStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYThirdStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BC75F1E51909473B009A9ED9 /* AYThirdStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYThirdStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		BC75F1E819094B9A009A9ED9 /* AYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYTabBarViewController.h; sourceTree = "<group>"; };
+		BC75F1E919094B9A009A9ED9 /* AYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYTabBarViewController.m; sourceTree = "<group>"; };
+		BC75F1EC19094BB6009A9ED9 /* AYTabBarViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AYTabBarViewController+Storyboard.h"; sourceTree = "<group>"; };
+		BC75F1ED19094BB6009A9ED9 /* AYTabBarViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AYTabBarViewController+Storyboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +142,12 @@
 			children = (
 				BC72001719084DDF00B7D45C /* AYAppDelegate.h */,
 				BC72001819084DDF00B7D45C /* AYAppDelegate.m */,
-				BC72001A19084DDF00B7D45C /* Main_iPhone.storyboard */,
-				BC72001D19084DDF00B7D45C /* Main_iPad.storyboard */,
-				BC72002019084DDF00B7D45C /* AYFirstViewController.h */,
-				BC72002119084DDF00B7D45C /* AYFirstViewController.m */,
-				BC72002319084DDF00B7D45C /* AYSecondViewController.h */,
-				BC72002419084DDF00B7D45C /* AYSecondViewController.m */,
+				BC75F1E719094B78009A9ED9 /* TabBar */,
+				BC75F1C3190942AA009A9ED9 /* MainStoryboard */,
+				BC75F1C719094477009A9ED9 /* FirstTab */,
+				BC75F1C819094480009A9ED9 /* SecondTab */,
+				BC75F1C919094487009A9ED9 /* ThirdTab */,
+				BC75F1BF19094173009A9ED9 /* Categories */,
 				BC72002619084DDF00B7D45C /* Images.xcassets */,
 				BC72000F19084DDF00B7D45C /* Supporting Files */,
 			);
@@ -158,6 +191,130 @@
 				BC72000719084DDF00B7D45C /* Frameworks */,
 				BC72000619084DDF00B7D45C /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		BC75F1BF19094173009A9ED9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1C0190941A7009A9ED9 /* UIViewController+Storyboard.h */,
+				BC75F1C1190941A7009A9ED9 /* UIViewController+Storyboard.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BC75F1C3190942AA009A9ED9 /* MainStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC72001A19084DDF00B7D45C /* Main_iPhone.storyboard */,
+				BC72001D19084DDF00B7D45C /* Main_iPad.storyboard */,
+			);
+			name = MainStoryboard;
+			sourceTree = "<group>";
+		};
+		BC75F1C719094477009A9ED9 /* FirstTab */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1CB1909450F009A9ED9 /* Storyboard */,
+				BC75F1CA19094505009A9ED9 /* Categories */,
+				BC72002019084DDF00B7D45C /* AYFirstViewController.h */,
+				BC72002119084DDF00B7D45C /* AYFirstViewController.m */,
+			);
+			name = FirstTab;
+			sourceTree = "<group>";
+		};
+		BC75F1C819094480009A9ED9 /* SecondTab */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1D3190945DB009A9ED9 /* Storyboard */,
+				BC75F1D4190945E3009A9ED9 /* Categories */,
+				BC72002319084DDF00B7D45C /* AYSecondViewController.h */,
+				BC72002419084DDF00B7D45C /* AYSecondViewController.m */,
+			);
+			name = SecondTab;
+			sourceTree = "<group>";
+		};
+		BC75F1C919094487009A9ED9 /* ThirdTab */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1D819094602009A9ED9 /* Storyboard */,
+				BC75F1D919094609009A9ED9 /* Categories */,
+				BC75F1C4190943FB009A9ED9 /* AYThirdViewController.h */,
+				BC75F1C5190943FB009A9ED9 /* AYThirdViewController.m */,
+			);
+			name = ThirdTab;
+			sourceTree = "<group>";
+		};
+		BC75F1CA19094505009A9ED9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1D0190945BE009A9ED9 /* AYFirstViewController+Storyboard.h */,
+				BC75F1D1190945BE009A9ED9 /* AYFirstViewController+Storyboard.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BC75F1CB1909450F009A9ED9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1CC19094553009A9ED9 /* AYFirstStoryboard_iPhone.storyboard */,
+				BC75F1CE1909456F009A9ED9 /* AYFirstStoryboard_iPad.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		BC75F1D3190945DB009A9ED9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1DD19094642009A9ED9 /* AYSecondStoryboard_iPhone.storyboard */,
+				BC75F1DF19094654009A9ED9 /* AYSecondStoryboard_iPad.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		BC75F1D4190945E3009A9ED9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1D5190945F6009A9ED9 /* AYSecondViewController+Storyboard.h */,
+				BC75F1D6190945F6009A9ED9 /* AYSecondViewController+Storyboard.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BC75F1D819094602009A9ED9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1E31909467A009A9ED9 /* AYThirdStoryboard_iPhone.storyboard */,
+				BC75F1E51909473B009A9ED9 /* AYThirdStoryboard_iPad.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		BC75F1D919094609009A9ED9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1DA1909461C009A9ED9 /* AYThirdViewController+Storyboard.h */,
+				BC75F1DB1909461C009A9ED9 /* AYThirdViewController+Storyboard.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BC75F1E719094B78009A9ED9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1EB19094BA1009A9ED9 /* Categories */,
+				BC75F1E819094B9A009A9ED9 /* AYTabBarViewController.h */,
+				BC75F1E919094B9A009A9ED9 /* AYTabBarViewController.m */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		BC75F1EB19094BA1009A9ED9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F1EC19094BB6009A9ED9 /* AYTabBarViewController+Storyboard.h */,
+				BC75F1ED19094BB6009A9ED9 /* AYTabBarViewController+Storyboard.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +395,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC72001F19084DDF00B7D45C /* Main_iPad.storyboard in Resources */,
+				BC75F1E019094654009A9ED9 /* AYSecondStoryboard_iPad.storyboard in Resources */,
+				BC75F1CD19094553009A9ED9 /* AYFirstStoryboard_iPhone.storyboard in Resources */,
+				BC75F1CF1909456F009A9ED9 /* AYFirstStoryboard_iPad.storyboard in Resources */,
+				BC75F1E41909467A009A9ED9 /* AYThirdStoryboard_iPhone.storyboard in Resources */,
 				BC72002719084DDF00B7D45C /* Images.xcassets in Resources */,
 				BC72001C19084DDF00B7D45C /* Main_iPhone.storyboard in Resources */,
+				BC75F1E61909473B009A9ED9 /* AYThirdStoryboard_iPad.storyboard in Resources */,
 				BC72001319084DDF00B7D45C /* InfoPlist.strings in Resources */,
+				BC75F1DE19094642009A9ED9 /* AYSecondStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +422,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC75F1EA19094B9A009A9ED9 /* AYTabBarViewController.m in Sources */,
+				BC75F1C6190943FB009A9ED9 /* AYThirdViewController.m in Sources */,
 				BC72002519084DDF00B7D45C /* AYSecondViewController.m in Sources */,
+				BC75F1EE19094BB6009A9ED9 /* AYTabBarViewController+Storyboard.m in Sources */,
+				BC75F1DC1909461C009A9ED9 /* AYThirdViewController+Storyboard.m in Sources */,
+				BC75F1C2190941A7009A9ED9 /* UIViewController+Storyboard.m in Sources */,
 				BC72001919084DDF00B7D45C /* AYAppDelegate.m in Sources */,
 				BC72001519084DDF00B7D45C /* main.m in Sources */,
+				BC75F1D2190945BE009A9ED9 /* AYFirstViewController+Storyboard.m in Sources */,
 				BC72002219084DDF00B7D45C /* AYFirstViewController.m in Sources */,
+				BC75F1D7190945F6009A9ED9 /* AYSecondViewController+Storyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

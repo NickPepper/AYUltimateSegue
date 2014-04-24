@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gvg-JE-ffc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Third View Controller - Third-->
+        <scene sceneID="EUI-oq-lQQ">
+            <objects>
+                <viewController title="Third" id="gvg-JE-ffc" customClass="AYThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I16-BT-YiF"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKu-yp-Acf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F9Y-mp-cZg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Third View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RA1-w3-31j">
+                                <rect key="frame" x="20" y="158" width="280" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the third view controller — an instance of AYSecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-HW-ybD">
+                                <rect key="frame" x="20" y="240" width="280" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="nri-qH-rJb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RA1-w3-31j" secondAttribute="trailing" constant="20" symbolic="YES" id="9vP-af-A06"/>
+                            <constraint firstItem="IkP-HW-ybD" firstAttribute="leading" secondItem="F9Y-mp-cZg" secondAttribute="leading" constant="20" symbolic="YES" id="GdB-8F-puF"/>
+                            <constraint firstAttribute="trailing" secondItem="IkP-HW-ybD" secondAttribute="trailing" constant="20" symbolic="YES" id="Gww-5p-Mnw"/>
+                            <constraint firstAttribute="centerY" secondItem="IkP-HW-ybD" secondAttribute="centerY" id="IRy-42-dfX"/>
+                            <constraint firstItem="IkP-HW-ybD" firstAttribute="top" secondItem="RA1-w3-31j" secondAttribute="bottom" constant="40" id="t7u-vl-5wI"/>
+                            <constraint firstItem="RA1-w3-31j" firstAttribute="leading" secondItem="F9Y-mp-cZg" secondAttribute="leading" constant="20" symbolic="YES" id="wrX-N1-D6H"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" image="second" id="ptk-gw-LCZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2Z-iT-ec0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="772"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
