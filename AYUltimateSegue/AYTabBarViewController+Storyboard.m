@@ -17,19 +17,46 @@
 - (void)tabBarToFirstSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Do any additional setup.
-    //AYFirstViewController *viewController = [segue destinationViewController];
+    AYFirstViewController *viewController = nil;
+    if ([segue.destinationViewController isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navigationController = [segue destinationViewController];
+        viewController = (AYFirstViewController *)[navigationController topViewController];
+    }
+    else
+    {
+        viewController = [segue destinationViewController];
+    }
 }
 
 - (void)tabBarToSecondSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Do any additional setup.
-    //AYSecondViewController *viewController = [segue destinationViewController];
+    AYSecondViewController *viewController = nil;
+    if ([segue.destinationViewController isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navigationController = [segue destinationViewController];
+        viewController = (AYSecondViewController *)[navigationController topViewController];
+    }
+    else
+    {
+        viewController = [segue destinationViewController];
+    }
 }
 
 - (void)tabBarToThirdSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Do any additional setup.
-    //AYThirdViewController *viewController = [segue destinationViewController];
+    AYThirdViewController *viewController = nil;
+    if ([segue.destinationViewController isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navigationController = [segue destinationViewController];
+        viewController = (AYThirdViewController *)[navigationController topViewController];
+    }
+    else
+    {
+        viewController = [segue destinationViewController];
+    }
 }
 
 @end

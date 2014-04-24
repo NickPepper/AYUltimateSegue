@@ -15,24 +15,31 @@
 
 @implementation AYTabBarViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder])
+    {
+        [self performTabSegueWithIdentifier:@"tabBarToFirstSegue"
+                                 storyboard:@"AYFirstStoryboard"
+                                   tabIndex:0
+                                     sender:self];
+        
+        [self performTabSegueWithIdentifier:@"tabBarToSecondSegue"
+                                 storyboard:@"AYSecondStoryboard"
+                                   tabIndex:1
+                                     sender:self];
+        
+        [self performTabSegueWithIdentifier:@"tabBarToThirdSegue"
+                                 storyboard:@"AYThirdStoryboard"
+                                   tabIndex:2
+                                     sender:self];
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self performTabSegueWithIdentifier:@"tabBarToFirstSegue"
-                             storyboard:@"AYFirstStoryboard"
-                               tabIndex:0
-                                 sender:self];
-    
-    [self performTabSegueWithIdentifier:@"tabBarToSecondSegue"
-                             storyboard:@"AYSecondStoryboard"
-                               tabIndex:1
-                                 sender:self];
-    
-    [self performTabSegueWithIdentifier:@"tabBarToThirdSegue"
-                             storyboard:@"AYThirdStoryboard"
-                               tabIndex:2
-                                 sender:self];
 }
 
 - (void)didReceiveMemoryWarning

@@ -54,8 +54,7 @@
         }
         
         [viewControllers insertObject:viewController atIndex:tabIndex];
-        [tbController setViewControllers:viewControllers
-                                animated:YES];
+        [tbController setViewControllers:viewControllers];
     }
 }
 
@@ -75,6 +74,7 @@
 - (void)performModalSegueWithIdentifier:(NSString *)identifier
                              storyboard:(NSString *)storyboardName
                                  sender:(id)sender
+                             completion:(void (^)(void))completion
 {
     UIViewController *viewController = [self viewControllerForSegueWithIdentifier:identifier
                                                                        storyboard:storyboardName
@@ -82,7 +82,7 @@
     
     [self.navigationController presentViewController:viewController
                                             animated:YES
-                                          completion:nil];
+                                          completion:completion];
 }
 
 
@@ -90,18 +90,17 @@
                              storyboard:(NSString *)storyboardName
                                  sender:(id)sender
                                   style:(UIModalPresentationStyle)style
+                             completion:(void (^)(void))completion
 {
     UIViewController *viewController = [self viewControllerForSegueWithIdentifier:identifier
                                                                        storyboard:storyboardName
                                                                            sender:sender];
     
-    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-    rootViewController.modalPresentationStyle = style;
-    self.navigationController.modalPresentationStyle = style;
+    viewController.modalPresentationStyle = style;
     
     [self.navigationController presentViewController:viewController
                                             animated:YES
-                                          completion:nil];
+                                          completion:completion];
 }
 
 #pragma mark - Helpers

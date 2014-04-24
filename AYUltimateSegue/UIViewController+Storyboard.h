@@ -20,11 +20,13 @@
 
 - (void)performModalSegueWithIdentifier:(NSString *)identifier
                              storyboard:(NSString *)storyboardName
-                                 sender:(id)sender;
+                                 sender:(id)sender
+                             completion:(void (^)(void))completion;
 
 - (void)performModalSegueWithIdentifier:(NSString *)identifier
                              storyboard:(NSString *)storyboardName
                                  sender:(id)sender
-                                  style:(UIModalPresentationStyle)style;
+                                  style:(UIModalPresentationStyle)style
+                             completion:(void (^)(void))completion;
 
 @end
