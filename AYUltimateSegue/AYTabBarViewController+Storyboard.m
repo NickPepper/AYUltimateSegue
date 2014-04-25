@@ -14,7 +14,8 @@
 
 @implementation AYTabBarViewController (Storyboard)
 
-- (void)tabBarToFirstSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)tabBarToFirstSegue:(UIStoryboardSegue *)segue
+                    sender:(id)sender
 {
     // Do any additional setup.
     AYFirstViewController *viewController = nil;
@@ -29,7 +30,8 @@
     }
 }
 
-- (void)tabBarToSecondSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)tabBarToSecondSegue:(UIStoryboardSegue *)segue
+                     sender:(id)sender
 {
     // Do any additional setup.
     AYSecondViewController *viewController = nil;
@@ -44,7 +46,8 @@
     }
 }
 
-- (void)tabBarToThirdSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)tabBarToThirdSegue:(UIStoryboardSegue *)segue
+                    sender:(id)sender
 {
     // Do any additional setup.
     AYThirdViewController *viewController = nil;
@@ -52,11 +55,30 @@
     {
         UINavigationController *navigationController = [segue destinationViewController];
         viewController = (AYThirdViewController *)[navigationController topViewController];
+        viewController.title = @"Third";
     }
     else
     {
         viewController = [segue destinationViewController];
     }
+}
+
+- (void)removeViewControllerAtIndex:(NSUInteger)index
+                           animated:(BOOL)animated
+{
+    NSMutableArray *viewControllers = [self.viewControllers mutableCopy];
+    
+    [viewControllers removeObjectAtIndex:index];
+    [self setViewControllers:viewControllers
+                    animated:animated];
+}
+
+- (void)removeViewControllerAnimated:(BOOL)animated
+{
+    NSUInteger tabIndex = [self.viewControllers count] - 1;
+    
+    [self removeViewControllerAtIndex:tabIndex
+                             animated:animated];
 }
 
 @end

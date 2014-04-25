@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1EB3FB190A52F60041DEF7 /* AYDistinctViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1EB3FA190A52F60041DEF7 /* AYDistinctViewController.m */; };
+		BC1EB3FE190A53260041DEF7 /* AYDistinctStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1EB3FD190A53260041DEF7 /* AYDistinctStoryboard_iPhone.storyboard */; };
+		BC1EB400190A53510041DEF7 /* AYDistinctStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1EB3FF190A53510041DEF7 /* AYDistinctStoryboard_iPad.storyboard */; };
 		BC72000919084DDF00B7D45C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC72000819084DDF00B7D45C /* Foundation.framework */; };
 		BC72000B19084DDF00B7D45C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC72000A19084DDF00B7D45C /* CoreGraphics.framework */; };
 		BC72000D19084DDF00B7D45C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC72000C19084DDF00B7D45C /* UIKit.framework */; };
@@ -49,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC1EB3F9190A52F60041DEF7 /* AYDistinctViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYDistinctViewController.h; sourceTree = "<group>"; };
+		BC1EB3FA190A52F60041DEF7 /* AYDistinctViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYDistinctViewController.m; sourceTree = "<group>"; };
+		BC1EB3FD190A53260041DEF7 /* AYDistinctStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYDistinctStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BC1EB3FF190A53510041DEF7 /* AYDistinctStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AYDistinctStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		BC72000519084DDF00B7D45C /* AYUltimateSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYUltimateSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC72000819084DDF00B7D45C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC72000A19084DDF00B7D45C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +124,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1EB3F8190A52DC0041DEF7 /* Distinct */ = {
+			isa = PBXGroup;
+			children = (
+				BC1EB3FC190A52FA0041DEF7 /* Storyboard */,
+				BC1EB3F9190A52F60041DEF7 /* AYDistinctViewController.h */,
+				BC1EB3FA190A52F60041DEF7 /* AYDistinctViewController.m */,
+			);
+			name = Distinct;
+			sourceTree = "<group>";
+		};
+		BC1EB3FC190A52FA0041DEF7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC1EB3FD190A53260041DEF7 /* AYDistinctStoryboard_iPhone.storyboard */,
+				BC1EB3FF190A53510041DEF7 /* AYDistinctStoryboard_iPad.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		BC72000619084DDF00B7D45C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +166,7 @@
 		BC72000E19084DDF00B7D45C /* AYUltimateSegue */ = {
 			isa = PBXGroup;
 			children = (
+				BC1EB3F8190A52DC0041DEF7 /* Distinct */,
 				BC72001719084DDF00B7D45C /* AYAppDelegate.h */,
 				BC72001819084DDF00B7D45C /* AYAppDelegate.m */,
 				BC75F1E719094B78009A9ED9 /* TabBar */,
@@ -397,7 +424,9 @@
 				BC72001F19084DDF00B7D45C /* Main_iPad.storyboard in Resources */,
 				BC75F1E019094654009A9ED9 /* AYSecondStoryboard_iPad.storyboard in Resources */,
 				BC75F1CD19094553009A9ED9 /* AYFirstStoryboard_iPhone.storyboard in Resources */,
+				BC1EB3FE190A53260041DEF7 /* AYDistinctStoryboard_iPhone.storyboard in Resources */,
 				BC75F1CF1909456F009A9ED9 /* AYFirstStoryboard_iPad.storyboard in Resources */,
+				BC1EB400190A53510041DEF7 /* AYDistinctStoryboard_iPad.storyboard in Resources */,
 				BC75F1E41909467A009A9ED9 /* AYThirdStoryboard_iPhone.storyboard in Resources */,
 				BC72002719084DDF00B7D45C /* Images.xcassets in Resources */,
 				BC72001C19084DDF00B7D45C /* Main_iPhone.storyboard in Resources */,
@@ -422,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1EB3FB190A52F60041DEF7 /* AYDistinctViewController.m in Sources */,
 				BC75F1EA19094B9A009A9ED9 /* AYTabBarViewController.m in Sources */,
 				BC75F1C6190943FB009A9ED9 /* AYThirdViewController.m in Sources */,
 				BC72002519084DDF00B7D45C /* AYSecondViewController.m in Sources */,

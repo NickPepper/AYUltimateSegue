@@ -26,13 +26,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)pushToFirst:(id)sender {
+- (IBAction)pushToFirst:(id)sender
+{
+    [self performPushSegueWithIdentifier:@"thirdToFirstSegue"
+                              storyboard:@"AYFirstStoryboard"
+                                  sender:nil];
 }
 
-- (IBAction)pushToSecond:(id)sender {
+- (IBAction)pushToSecond:(id)sender
+{
+    [self performPushSegueWithIdentifier:@"thirdToSecondSegue"
+                              storyboard:@"AYSecondStoryboard"
+                                  sender:nil];
 }
 
-- (IBAction)pushToDistinct:(id)sender {
+- (IBAction)pushToDistinct:(id)sender
+{
+    [self performPushSegueWithIdentifier:@"thirdToDistinctSegue"
+                              storyboard:@"AYDistinctStoryboard"
+                                  sender:nil];
 }
 
 @end

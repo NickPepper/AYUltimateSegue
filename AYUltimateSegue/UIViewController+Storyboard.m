@@ -33,20 +33,35 @@
 
 #pragma clang diagnostic pop
 
-- (void)performTabSegueWithIdentifier:(NSString *)identifier
-                           storyboard:(NSString *)storyboardName
-                             tabIndex:(NSUInteger)tabIndex
-                               sender:(id)sender
+- (void)insertViewControllerWithIdentifier:(NSString *)identifier
+                                storyboard:(NSString *)storyboardName
+                          tabBarController:(UITabBarController *)tabBarController
+                                    sender:(id)sender
+{
+    if (tabBarController)
+    {
+        NSUInteger tabIndex = [tabBarController.viewControllers count];
+        
+        [self insertViewControllerWithIdentifier:identifier
+                                      storyboard:storyboardName
+                                tabBarController:tabBarController
+                                        tabIndex:tabIndex
+                                          sender:sender];
+    }
+}
+
+- (void)insertViewControllerWithIdentifier:(NSString *)identifier
+                                storyboard:(NSString *)storyboardName
+                          tabBarController:(UITabBarController *)tabBarController
+                                  tabIndex:(NSUInteger)tabIndex
+                                    sender:(id)sender
 {
     UIViewController *viewController = [self viewControllerForSegueWithIdentifier:identifier
                                                                        storyboard:storyboardName
                                                                            sender:sender];
-    
-    if ([self respondsToSelector:@selector(viewControllers)] && [self isKindOfClass:[UITabBarController class]])
+    if (tabBarController)
     {
-        UITabBarController *tbController = (UITabBarController *)self;
-        
-        NSMutableArray *viewControllers = [tbController.viewControllers mutableCopy];
+        NSMutableArray *viewControllers = [tabBarController.viewControllers mutableCopy];
         
         if (!viewControllers)
         {
@@ -54,7 +69,8 @@
         }
         
         [viewControllers insertObject:viewController atIndex:tabIndex];
-        [tbController setViewControllers:viewControllers];
+        [tabBarController setViewControllers:viewControllers
+                                    animated:[sender boolValue]];
     }
 }
 
@@ -76,34 +92,83 @@
                                  sender:(id)sender
                              completion:(void (^)(void))completion
 {
-    UIViewController *viewController = [self viewControllerForSegueWithIdentifier:identifier
-                                                                       storyboard:storyboardName
-                                                                           sender:sender];
-    
-    [self.navigationController presentViewController:viewController
-                                            animated:YES
-                                          completion:completion];
+    [self performModalSegueWithIdentifier:identifier
+                               storyboard:storyboardName
+                                   sender:sender
+                          transitionStyle:0
+                        presentationStyle:0
+                               completion:completion];
 }
 
 
 - (void)performModalSegueWithIdentifier:(NSString *)identifier
                              storyboard:(NSString *)storyboardName
                                  sender:(id)sender
-                                  style:(UIModalPresentationStyle)style
+                        transitionStyle:(UIModalTransitionStyle)transitionStyle
+                      presentationStyle:(UIModalPresentationStyle)presentationStyle
                              completion:(void (^)(void))completion
 {
     UIViewController *viewController = [self viewControllerForSegueWithIdentifier:identifier
                                                                        storyboard:storyboardName
                                                                            sender:sender];
     
-    viewController.modalPresentationStyle = style;
+    viewController.modalPresentationStyle = presentationStyle;
+    viewController.modalTransitionStyle = transitionStyle;
     
-    [self.navigationController presentViewController:viewController
-                                            animated:YES
-                                          completion:completion];
+    [self presentViewController:viewController
+                       animated:YES
+                     completion:completion];
+}
+
+- (void)performModalEmbededSegueWithIdentifier:(NSString *)identifier
+                                    storyboard:(NSString *)storyboardName
+                                        sender:(id)sender
+                                    completion:(void (^)(void))completion
+{
+    [self performModalEmbededSegueWithIdentifier:identifier
+                                      storyboard:storyboardName
+                                          sender:sender
+                                 transitionStyle:0
+                               presentationStyle:0
+                                      completion:completion];
+}
+
+- (void)performModalEmbededSegueWithIdentifier:(NSString *)identifier
+                                    storyboard:(NSString *)storyboardName
+                                        sender:(id)sender
+                               transitionStyle:(UIModalTransitionStyle)transitionStyle
+                             presentationStyle:(UIModalPresentationStyle)presentationStyle
+                                    completion:(void (^)(void))completion
+{
+    UINavigationController *viewController = [self viewControllerEmbededForSegueWithIdentifier:identifier
+                                                                                    storyboard:storyboardName
+                                                                                        sender:sender];
+    
+    viewController.modalPresentationStyle = presentationStyle;
+    viewController.modalTransitionStyle = transitionStyle;
+    
+    [self presentViewController:viewController
+                       animated:YES
+                     completion:completion];
 }
 
 #pragma mark - Helpers
+
+- (UINavigationController *)viewControllerEmbededForSegueWithIdentifier:(NSString *)identifier
+                                                             storyboard:(NSString *)storyboardName
+                                                                 sender:(id)sender
+{
+    UIViewController *viewController = [self viewControllerForSegueWithIdentifier:identifier
+                                                                       storyboard:storyboardName
+                                                                           sender:sender];
+    
+    if ([viewController isKindOfClass:[UINavigationController class]])
+    {
+        return (UINavigationController *)viewController;
+    }
+    
+    return [[UINavigationController alloc] initWithRootViewController:viewController];
+}
 
 - (UIViewController *)viewControllerForSegueWithIdentifier:(NSString *)identifier
                                                 storyboard:(NSString *)storyboardName

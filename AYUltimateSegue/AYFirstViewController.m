@@ -27,13 +27,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)presentSecond:(id)sender {
+- (IBAction)presentSecond:(id)sender
+{
+    [self performModalSegueWithIdentifier:@"firstToSecondSegue"
+                               storyboard:@"AYSecondStoryboard"
+                                   sender:nil
+                          transitionStyle:UIModalTransitionStylePartialCurl
+                        presentationStyle:UIModalPresentationFullScreen
+                               completion:^{
+                                   NSLog(@"Did presented Second Tab");
+                               }];
 }
 
-- (IBAction)presentThird:(id)sender {
+- (IBAction)presentThird:(id)sender
+{
+    [self performModalSegueWithIdentifier:@"firstToThirdSegue"
+                               storyboard:@"AYThirdStoryboard"
+                                   sender:nil
+                               completion:^{
+                                   NSLog(@"Did presented Third Tab");
+                               }];
 }
 
-- (IBAction)presentDistinct:(id)sender {
+- (IBAction)presentDistinct:(id)sender
+{
+    [self performModalEmbededSegueWithIdentifier:@"firstToDistinctSegue"
+                                      storyboard:@"AYDistinctStoryboard"
+                                          sender:nil
+                                      completion:^{
+                                          NSLog(@"Did presented Distinct VC");
+                                      }];
 }
 
 @end

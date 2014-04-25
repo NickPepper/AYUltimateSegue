@@ -18,21 +18,21 @@
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder])
-    {
-        [self performTabSegueWithIdentifier:@"tabBarToFirstSegue"
-                                 storyboard:@"AYFirstStoryboard"
-                                   tabIndex:0
-                                     sender:self];
+    {        
+        [self insertViewControllerWithIdentifier:@"tabBarToFirstSegue"
+                                      storyboard:@"AYFirstStoryboard"
+                                tabBarController:self
+                                          sender:@(NO)];
         
-        [self performTabSegueWithIdentifier:@"tabBarToSecondSegue"
-                                 storyboard:@"AYSecondStoryboard"
-                                   tabIndex:1
-                                     sender:self];
+        [self insertViewControllerWithIdentifier:@"tabBarToSecondSegue"
+                                      storyboard:@"AYSecondStoryboard"
+                                tabBarController:self
+                                          sender:@(NO)];
         
-        [self performTabSegueWithIdentifier:@"tabBarToThirdSegue"
-                                 storyboard:@"AYThirdStoryboard"
-                                   tabIndex:2
-                                     sender:self];
+        [self insertViewControllerWithIdentifier:@"tabBarToThirdSegue"
+                                      storyboard:@"AYThirdStoryboard"
+                                tabBarController:self
+                                          sender:@(NO)];
     }
     return self;
 }

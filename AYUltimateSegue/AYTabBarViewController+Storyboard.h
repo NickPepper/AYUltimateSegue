@@ -10,4 +10,9 @@
 
 @interface AYTabBarViewController (Storyboard)
 
+- (void)removeViewControllerAnimated:(BOOL)animated;
+
+- (void)removeViewControllerAtIndex:(NSUInteger)index
+                           animated:(BOOL)animated;
+
 @end
