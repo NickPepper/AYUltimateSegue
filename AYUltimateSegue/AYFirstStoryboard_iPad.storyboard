@@ -23,27 +23,52 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the First View Controller — an instance of AYFirstViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dGX-Sl-SlQ">
-                                <rect key="frame" x="250" y="350" width="268" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="268" id="07v-u3-3fc"/>
-                                    <constraint firstAttribute="height" constant="70" id="9VN-sD-iGl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drg-u3-A78">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <items/>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AR-Fa-xXo">
+                                <rect key="frame" x="284" y="441" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Present second">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentSecond:" destination="XqF-x9-Oql" eventType="touchUpInside" id="ifa-Qu-JXQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPL-dO-qXV">
+                                <rect key="frame" x="284" y="495" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Present third">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentThird:" destination="XqF-x9-Oql" eventType="touchUpInside" id="zQD-eU-roy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-wp-3mA">
+                                <rect key="frame" x="284" y="553" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Present distinct">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentDistinct:" destination="XqF-x9-Oql" eventType="touchUpInside" id="68i-lj-K1C"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Drg-u3-A78" firstAttribute="top" secondItem="VK7-bu-PV0" secondAttribute="top" id="1Jv-yQ-FEh"/>
                             <constraint firstAttribute="trailing" secondItem="lDs-5g-8f8" secondAttribute="trailing" constant="20" symbolic="YES" id="70Q-PL-RY0"/>
                             <constraint firstItem="lDs-5g-8f8" firstAttribute="leading" secondItem="VK7-bu-PV0" secondAttribute="leading" constant="20" symbolic="YES" id="NIs-RX-zqp"/>
-                            <constraint firstItem="dGX-Sl-SlQ" firstAttribute="centerX" secondItem="lDs-5g-8f8" secondAttribute="centerX" id="Qqt-3U-Vet"/>
-                            <constraint firstItem="dGX-Sl-SlQ" firstAttribute="top" secondItem="VK7-bu-PV0" secondAttribute="top" constant="350" id="SnA-P3-W64"/>
                             <constraint firstItem="lDs-5g-8f8" firstAttribute="top" secondItem="VK7-bu-PV0" secondAttribute="top" constant="250" id="XGT-Sv-qi4"/>
                             <constraint firstItem="Drg-u3-A78" firstAttribute="trailing" secondItem="VK7-bu-PV0" secondAttribute="trailing" id="gA1-5G-i3k"/>
                             <constraint firstItem="Drg-u3-A78" firstAttribute="leading" secondItem="VK7-bu-PV0" secondAttribute="leading" id="m9E-9T-pfn"/>

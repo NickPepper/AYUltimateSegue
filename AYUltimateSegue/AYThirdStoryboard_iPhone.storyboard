@@ -23,22 +23,47 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the third view controller — an instance of AYSecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-HW-ybD">
-                                <rect key="frame" x="20" y="240" width="280" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="nri-qH-rJb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDa-VA-G15">
+                                <rect key="frame" x="65" y="235" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Push to first">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushToFirst:" destination="gvg-JE-ffc" eventType="touchUpInside" id="5fX-6v-ktM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-Tj-86z">
+                                <rect key="frame" x="65" y="350" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Push to distinct">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushToDistinct:" destination="gvg-JE-ffc" eventType="touchUpInside" id="Nc4-TY-jQF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLK-3k-DIg">
+                                <rect key="frame" x="65" y="293" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Push to second">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushToSecond:" destination="gvg-JE-ffc" eventType="touchUpInside" id="bcF-s7-hzu"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.18431372939999999" green="0.59607845540000004" blue="0.34117648010000001" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="RA1-w3-31j" secondAttribute="trailing" constant="20" symbolic="YES" id="9vP-af-A06"/>
-                            <constraint firstItem="IkP-HW-ybD" firstAttribute="leading" secondItem="F9Y-mp-cZg" secondAttribute="leading" constant="20" symbolic="YES" id="GdB-8F-puF"/>
-                            <constraint firstAttribute="trailing" secondItem="IkP-HW-ybD" secondAttribute="trailing" constant="20" symbolic="YES" id="Gww-5p-Mnw"/>
-                            <constraint firstAttribute="centerY" secondItem="IkP-HW-ybD" secondAttribute="centerY" id="IRy-42-dfX"/>
-                            <constraint firstItem="IkP-HW-ybD" firstAttribute="top" secondItem="RA1-w3-31j" secondAttribute="bottom" constant="40" id="t7u-vl-5wI"/>
+                            <constraint firstItem="RA1-w3-31j" firstAttribute="top" secondItem="I16-BT-YiF" secondAttribute="bottom" constant="94" id="tNs-RF-avU"/>
                             <constraint firstItem="RA1-w3-31j" firstAttribute="leading" secondItem="F9Y-mp-cZg" secondAttribute="leading" constant="20" symbolic="YES" id="wrX-N1-D6H"/>
                         </constraints>
                     </view>

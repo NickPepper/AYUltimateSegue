@@ -23,26 +23,43 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the second view controller — an instance of AYSecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zz6-nz-mKq">
-                                <rect key="frame" x="20" y="240" width="280" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="KbU-LH-TnF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRH-Bo-Eoq">
+                                <rect key="frame" x="65" y="243" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Add VC to TabBar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addVCToTabBar:" destination="Oah-ku-076" eventType="touchUpInside" id="UCY-ja-7zD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5o-wE-5d9">
+                                <rect key="frame" x="65" y="297" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Remove VC from TabBar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeVCFromTabBAr:" destination="Oah-ku-076" eventType="touchUpInside" id="WNz-32-Wic"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QYR-sR-gQw" secondAttribute="trailing" constant="20" symbolic="YES" id="5CO-Qo-p9D"/>
-                            <constraint firstItem="zz6-nz-mKq" firstAttribute="top" secondItem="QYR-sR-gQw" secondAttribute="bottom" constant="40" id="CVx-cz-HCG"/>
-                            <constraint firstAttribute="centerY" secondItem="zz6-nz-mKq" secondAttribute="centerY" id="PcD-oo-rFf"/>
-                            <constraint firstAttribute="trailing" secondItem="zz6-nz-mKq" secondAttribute="trailing" constant="20" symbolic="YES" id="QPS-We-iWw"/>
-                            <constraint firstItem="zz6-nz-mKq" firstAttribute="leading" secondItem="Hf7-Bw-zWa" secondAttribute="leading" constant="20" symbolic="YES" id="X9O-iE-YiG"/>
+                            <constraint firstItem="QYR-sR-gQw" firstAttribute="top" secondItem="YXz-Ny-Ofj" secondAttribute="bottom" constant="138" id="QzQ-uY-eaU"/>
                             <constraint firstItem="QYR-sR-gQw" firstAttribute="leading" secondItem="Hf7-Bw-zWa" secondAttribute="leading" constant="20" symbolic="YES" id="rA9-HB-x0g"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="qLt-1k-5aV"/>
+                    <connections>
+                        <outlet property="addButton" destination="IRH-Bo-Eoq" id="Ubs-jh-KeL"/>
+                        <outlet property="removeButton" destination="c5o-wE-5d9" id="Xrw-li-ubb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIw-mg-fbN" sceneMemberID="firstResponder"/>
             </objects>

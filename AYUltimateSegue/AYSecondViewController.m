@@ -10,7 +10,8 @@
 #import "AYSecondViewController+Storyboard.h"
 
 @interface AYSecondViewController ()
-
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
+@property (weak, nonatomic) IBOutlet UIButton *removeButton;
 @end
 
 @implementation AYSecondViewController
@@ -25,6 +26,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)addVCToTabBar:(id)sender {
+}
+
+- (IBAction)removeVCFromTabBAr:(id)sender {
 }
 
 @end

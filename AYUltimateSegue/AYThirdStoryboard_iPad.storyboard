@@ -23,24 +23,50 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the Third View Controller — an instance of AYSecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7j5-iV-fzN">
-                                <rect key="frame" x="235" y="350" width="297" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="33L-mY-f8K"/>
-                                    <constraint firstAttribute="width" constant="297" id="SuT-CB-0VS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
                             <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Hd-DF-TPn">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <items>
                                     <navigationItem id="7OG-8Q-7CW"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7B-fg-Xmr">
+                                <rect key="frame" x="284" y="439" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Push to first">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushToFirst:" destination="6hk-6J-mMl" eventType="touchUpInside" id="hG8-lH-nxC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phs-9j-VAL">
+                                <rect key="frame" x="284" y="554" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Push to distinct">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushToDistinct:" destination="6hk-6J-mMl" eventType="touchUpInside" id="lBt-NH-fuu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-rd-76b">
+                                <rect key="frame" x="284" y="497" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Push to second">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushToSecond:" destination="6hk-6J-mMl" eventType="touchUpInside" id="CE8-RB-624"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.18431372939999999" green="0.59607845540000004" blue="0.34117648010000001" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="6Hd-DF-TPn" firstAttribute="top" secondItem="vz9-5D-NOL" secondAttribute="top" id="96T-pt-9gc"/>
                             <constraint firstItem="Yav-uE-eqT" firstAttribute="leading" secondItem="vz9-5D-NOL" secondAttribute="leading" constant="20" symbolic="YES" id="Acu-Zj-kau"/>
@@ -48,8 +74,6 @@
                             <constraint firstAttribute="trailing" secondItem="Yav-uE-eqT" secondAttribute="trailing" constant="20" symbolic="YES" id="OQO-IW-7IU"/>
                             <constraint firstItem="6Hd-DF-TPn" firstAttribute="leading" secondItem="vz9-5D-NOL" secondAttribute="leading" id="PT8-jZ-Z06"/>
                             <constraint firstItem="Yav-uE-eqT" firstAttribute="top" secondItem="vz9-5D-NOL" secondAttribute="top" constant="250" id="ZkG-Ud-3rl"/>
-                            <constraint firstItem="7j5-iV-fzN" firstAttribute="top" secondItem="vz9-5D-NOL" secondAttribute="top" constant="350" id="akF-HP-V29"/>
-                            <constraint firstItem="7j5-iV-fzN" firstAttribute="leading" secondItem="vz9-5D-NOL" secondAttribute="leading" constant="235" id="viV-X8-98O"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YfC-tT-6DY"/>

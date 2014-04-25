@@ -27,4 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)presentSecond:(id)sender {
+}
+
+- (IBAction)presentThird:(id)sender {
+}
+
+- (IBAction)presentDistinct:(id)sender {
+}
+
 @end
