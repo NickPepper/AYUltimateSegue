@@ -13,11 +13,15 @@
 
 @implementation UIViewController (Storyboard)
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
+#pragma mark - Magic
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue
-                 sender:(id)sender
++ (void)load
+{
+    method_exchangeImplementations(class_getInstanceMethod(self, @selector(prepareForSegue:sender:)), class_getInstanceMethod(self, @selector(prepareForSegueCategoryOverride:sender:)));
+}
+
+- (void)prepareForSegueCategoryOverride:(UIStoryboardSegue *)segue
+                                 sender:(id)sender
 {
     NSString *selectorString = [NSString stringWithFormat:@"%@:sender:", [segue identifier]];
     
@@ -30,8 +34,7 @@
     ((void(*)(id, SEL, UIStoryboardSegue *, id))objc_msgSend)(self, selector, segue, sender);
 }
 
-
-#pragma clang diagnostic pop
+#pragma mark - TabBar
 
 - (void)insertViewControllerWithIdentifier:(NSString *)identifier
                                 storyboard:(NSString *)storyboardName
@@ -74,6 +77,8 @@
     }
 }
 
+#pragma mark - Push
+
 - (void)performPushSegueWithIdentifier:(NSString *)identifier
                             storyboard:(NSString *)storyboardName
                                 sender:(id)sender
@@ -86,6 +91,7 @@
                                          animated:YES];
 }
 
+#pragma mark - Modal
 
 - (void)performModalSegueWithIdentifier:(NSString *)identifier
                              storyboard:(NSString *)storyboardName

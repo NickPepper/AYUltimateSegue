@@ -16,7 +16,7 @@
                      sender:(id)sender
 {
     AYDistinctViewController *viewController = [segue destinationViewController];
-    viewController.tabBarItem.title = [NSString stringWithFormat:@"Distinct-%d", self.tabBarController.viewControllers.count - 3];
+    viewController.tabBarItem.title = [NSString stringWithFormat:@"Distinct-%lu", (unsigned long)(self.tabBarController.viewControllers.count - 3)];
 }
 
 @end
